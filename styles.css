@@ -1,3 +1,6 @@
+
+
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -6,77 +9,110 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #eef2f7;
     color: #333;
+    padding: 10px;
 }
 
 header {
-    background: #007bff;
+    background: #1a8cd8;
     color: #fff;
     text-align: center;
     padding: 1em 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-header h1 {
-    margin: 0;
+header p {
+    font-weight: 300;
+    font-size: 1.1em;
 }
 
-main {
+.search-section, .information-section {
+    background: #fff;
     padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.search-section h2, .information-section h2 {
+    color: #1a8cd8;
+    margin-bottom: 15px;
+}
+
+.weather-display {
+    background-color: #f4f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 form {
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 input[type="text"] {
     padding: 10px;
     width: 70%;
-    margin-right: 5px;
+    margin-right: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    font-size: 1em;
 }
 
 button {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    background: #007bff;
+    background: #1a8cd8;
     color: white;
+    font-size: 1em;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background: #0056b3;
-}
-
-#weatherDisplay {
-    background-color: white;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #1474a4;
 }
 
 footer {
     text-align: center;
     padding: 1em 0;
-    background: #007bff;
+    background: #1a8cd8;
     color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
 }
 
 @media (max-width: 600px) {
-    input[type="text"] {
-        width: 60%;
+    input[type="text"], button {
+        width: 100%;
+        margin: 5px 0;
     }
 
-    button {
-        width: 35%;
+    form {
+        flex-direction: column;
     }
+}
+
+
+.error-message {
+    color: #d32f2f; /* Dark red color for the text */
+    background-color: #ffebee; /* Light red background for contrast */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #d32f2f; /* Border to make it more prominent */
+    margin-top: 20px;
 }

@@ -9,20 +9,33 @@
 <body>
     <header>
         <h1>Weather Dashboard</h1>
+        <p>Get real-time weather updates and tips for any city</p>
     </header>
-    <main>
-        <!-- Weather Dashboard Content Will Go Here -->
-        
-        <form id="searchForm">
-            <input type="text" id="searchInput" placeholder="Enter city name">
-            <button type="submit">Search</button>
-        </form>
-        <div id="weatherDisplay"></div>
 
+    <main>
+        <section class="search-section">
+            <h2>Check the Weather</h2>
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Enter city name">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="weatherDisplay" class="weather-display">
+            <!-- Weather information will be displayed here -->
+        </section>
+
+        <section class="information-section">
+            <h2>Weather Insights</h2>
+            <p>Did you know? Weather conditions can significantly impact your daily activities. Stay prepared with our real-time weather updates and tips.</p>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2023 Weather Dashboard</p>
+        <p>&copy; 2023 Weather Dashboard | All rights reserved</p>
+        <p>Data provided by OpenWeatherMap</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

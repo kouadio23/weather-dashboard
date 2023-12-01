@@ -1,0 +1,10 @@
+{
+  "defaultTip": "Enjoy your day!",
+  "tips": {
+    "Clouds": "It's cloudy, a perfect day for photography!",
+    "Clear": "It's clear out there. Great day for a walk!",
+    "Rain": "Don't forget your umbrella. It's rainy today.",
+    "Snow": "Wrap up warm, it's snowy!",
+    "Sunny": "Wear your sunglasses. It's bright outside!"
+  }
+}
